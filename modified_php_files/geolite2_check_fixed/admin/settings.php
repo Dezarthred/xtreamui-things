@@ -261,7 +261,7 @@ if ($rSettings["sidebar"]) {
                             $rCurrent_date = date("Ymd");
                             if (intval($rCurrent_date) - $rAdminSettings["geolite2_version"] > 7) {
                                 $rContext = stream_context_create(array('http'=> array('timeout' => 3)));
-                                $rGeoLite2 = json_decode(file_get_contents("https://bitbucket.org/emre1393/xtreamui_mirror/downloads/Geolite2_status.json", false, $rContext), True);
+                                $rGeoLite2 = json_decode(file_get_contents("https://bitbucket.org/IgorTristante/xtream_mirrors/downloads/Geolite2_status.json", false, $rContext), True);
                                 if (intval($rGeoLite2["version"]) > $rAdminSettings["geolite2_version"]) {
                                 ?>
                                 <div class="alert alert-info alert-dismissible fade show" role="alert">

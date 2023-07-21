@@ -49,10 +49,10 @@ function sortArrayByArray(array $rArray, array $rSort) {
 
 function updateGeoLite2() {
     global $rAdminSettings;
-    $rURL = "https://bitbucket.org/emre1393/xtreamui_mirror/downloads/Geolite2_status.json";
+    $rURL = "https://bitbucket.org/IgorTristante/xtream_mirrors/downloads/Geolite2_status.json";
     $rData = json_decode(file_get_contents($rURL), True);
     if ($rData["version"]) {
-        $rFileData = file_get_contents("https://bitbucket.org/emre1393/xtreamui_mirror/downloads/GeoLite2.mmdb");
+        $rFileData = file_get_contents("https://bitbucket.org/IgorTristante/xtream_mirrors/downloads/GeoLite2.mmdb");
         if (stripos($rFileData, "MaxMind.com") !== false) {
             $rFilePath = "/home/xtreamcodes/iptv_xtream_codes/GeoLite2.mmdb";
             exec("sudo chattr -i {$rFilePath}");

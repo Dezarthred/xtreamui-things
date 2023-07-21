@@ -20,12 +20,12 @@ wget --no-check-certificate "https://ssl-config.mozilla.org/ffdhe4096.txt" -O /h
 
 for main server,
 
-wget "https://github.com/emre1393/xtreamui-things/raw/master/nginx/conf/nginx.conf" -O /home/xtreamcodes/iptv_xtream_codes/nginx/conf/nginx.conf
+wget "https://github.com/Dezarthred/xtreamui-things/raw/master/nginx/conf/nginx.conf" -O /home/xtreamcodes/iptv_xtream_codes/nginx/conf/nginx.conf
 
 since r22d, developer added isp api, it is an experimentle api. uncomment the "include nginx_isp_api.conf;" in nginx.conf file.
 but with this you need to use certbot webroot challenge method.
 
-wget "https://github.com/emre1393/xtreamui-things/raw/master/nginx/conf/nginx_isp_api.conf" -O /home/xtreamcodes/iptv_xtream_codes/nginx/conf/nginx_isp_api.conf
+wget "https://github.com/Dezarthred/xtreamui-things/raw/master/nginx/conf/nginx_isp_api.conf" -O /home/xtreamcodes/iptv_xtream_codes/nginx/conf/nginx_isp_api.conf
 
 
 mkdir -p /var/www/_letsencrypt

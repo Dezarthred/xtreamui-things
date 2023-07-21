@@ -10,7 +10,7 @@ def getIP():
         return s.getsockname()[0]
     except: return None
 
-rDownloadURL = "https://github.com/emre1393/xtreamui_mirror/raw/master/balancer.py"
+rDownloadURL = "https://github.com/Dezarthred/xtreamui_mirror/raw/master/balancer.py"
 rPath = "/home/xtreamcodes/iptv_xtream_codes/adtools/balancer/"
 rConfig = decrypt()
 rIP = getIP()
